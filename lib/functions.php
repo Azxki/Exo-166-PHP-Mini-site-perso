@@ -29,7 +29,13 @@ function getUserData () {
     $obj = json_decode($json);
 
     if(isset($_GET['page']) && $_GET['page'] == "bio") {
-        echo $obj->name;
+        echo "Nom : " . $obj->name . "<br>";
+        echo "Prénom : " . $obj->first_name . "<br>";
+        echo "Profession : " . $obj->occupation . "<br><br>";
+
+        foreach ($obj->experiences as $value){
+            print_r($value->year . " : " . $value->company . "<br>");
+        }
     }
 }
 
