@@ -24,3 +24,12 @@ function getPart($name) {
 	include __DIR__ . '/../parts/'. $name . '.php';
 }
 
+function getUserData () {
+    $json = file_get_contents('../data/user.json');
+    $obj = json_decode($json);
+
+    if(isset($_GET['page']) && $_GET['page'] == "bio") {
+        echo $obj->name;
+    }
+}
+
