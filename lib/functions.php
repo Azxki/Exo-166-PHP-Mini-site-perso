@@ -8,15 +8,15 @@ la logique pour choisir la page à charger
 
 function getContent() {
 	if(!isset($_GET['page'])){
-		include __DIR__.'/../pages/home.php';
+		include dirname(__DIR__, 1).'/pages/home.php';
 	}
 	elseif(isset($_GET['page']) && $_GET['page'] == "bio") {
 
-        include __DIR__.'/../pages/bio.php';
+        include dirname(__DIR__, 1).'/pages/bio.php';
     }
 	elseif(isset($_GET['page']) && $_GET['page'] == "contact") {
 
-        include __DIR__.'/../pages/contact.php';
+        include dirname(__DIR__, 1).'/pages/contact.php';
     }
 }
 
