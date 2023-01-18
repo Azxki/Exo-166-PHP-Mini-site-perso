@@ -8,6 +8,6 @@
     </head>
     <body>
         <header>
-            <h1>Jane Doe</h1>
+            <h1>Corentin Coursan</h1>
             <?php getPart('menu'); ?>
         </header>

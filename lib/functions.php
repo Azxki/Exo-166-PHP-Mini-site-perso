@@ -15,7 +15,6 @@ function getContent() {
         include dirname(__DIR__, 1).'/pages/bio.php';
     }
 	elseif(isset($_GET['page']) && $_GET['page'] == "contact") {
-
         include dirname(__DIR__, 1).'/pages/contact.php';
     }
 }

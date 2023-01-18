@@ -1,7 +1,7 @@
 {
     "name": "Coursan",
     "first_name": "Corentin",
-    "occupation": "Web developer",
+    "occupation": "Developpeur WEB Front/Back",
     "experiences": [
         {
             "year": 2022,
@@ -13,7 +13,7 @@
         },
         {
             "year": 2020,
-            "company": "DUT IOSI Mont-Houy à Valenciennes"
+            "company": "DEUST IOSI Mont-Houy à Valenciennes"
         }
     ]
 }
